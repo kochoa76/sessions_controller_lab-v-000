@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     else
       redirect_to {controller: 'sessions', action: 'new'}
     end
-  end 
+  end
 
   def destroy
     session.destroy :name
