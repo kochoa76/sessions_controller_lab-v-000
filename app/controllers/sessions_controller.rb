@@ -15,12 +15,8 @@ class SessionsController < ApplicationController
     if session[:name] = params[:name]
       session.destroy
       redirect_to controller:'application', action: 'hello'
-    else 
+    else
       redirect_to controller: 'sessions', action: 'new'
-    else 
-    
-
-  end
-
-
+    end
+  end 
 end
