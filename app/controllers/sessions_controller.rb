@@ -13,10 +13,10 @@ class SessionsController < ApplicationController
 
   def destroy
     if session[:name] != params[:name]
-      session[:name] == nil 
+      session[:name] == nil
       redirect_to controller: 'sessions', action: 'new'
     else 
-    session.destroy 
+    session.destroy
     redirect_to controller:'application', action: 'hello'
 
   end
